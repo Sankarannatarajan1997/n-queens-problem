@@ -1,0 +1,10 @@
+c:\users\jacob\documents\visual studio 2012\Projects\Visual N-Queens Solver\Visual N-Queens Solver\bin\Debug\Visual N-Queens Solver.exe.config
+C:\Users\Jacob\Documents\Visual Studio 2012\Projects\Visual N-Queens Solver\Visual N-Queens Solver\obj\Debug\Visual N-Queens Solver.csprojResolveAssemblyReference.cache
+C:\Users\Jacob\Documents\Visual Studio 2012\Projects\Visual N-Queens Solver\Visual N-Queens Solver\obj\Debug\Visual_N_Queens_Solver.Properties.Resources.resources
+C:\Users\Jacob\Documents\Visual Studio 2012\Projects\Visual N-Queens Solver\Visual N-Queens Solver\obj\Debug\Visual N-Queens Solver.csproj.GenerateResource.Cache
+C:\Users\Jacob\Documents\Visual Studio 2012\Projects\Visual N-Queens Solver\Visual N-Queens Solver\bin\Debug\Visual N-Queens Solver.exe
+C:\Users\Jacob\Documents\Visual Studio 2012\Projects\Visual N-Queens Solver\Visual N-Queens Solver\bin\Debug\Visual N-Queens Solver.pdb
+C:\Users\Jacob\Documents\Visual Studio 2012\Projects\Visual N-Queens Solver\Visual N-Queens Solver\obj\Debug\Visual N-Queens Solver.exe
+C:\Users\Jacob\Documents\Visual Studio 2012\Projects\Visual N-Queens Solver\Visual N-Queens Solver\obj\Debug\Visual N-Queens Solver.pdb
+C:\Users\Jacob\Documents\Visual Studio 2012\Projects\Visual N-Queens Solver\Visual N-Queens Solver\obj\Debug\Visual_N_Queens_Solver.InputForm.resources
+C:\Users\Jacob\Documents\Visual Studio 2012\Projects\Visual N-Queens Solver\Visual N-Queens Solver\obj\Debug\Visual_N_Queens_Solver.Strings.resources
