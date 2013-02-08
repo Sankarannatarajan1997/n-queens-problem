@@ -79,7 +79,7 @@ namespace Visual_N_Queens_Solver {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Searching for solutions to the problem with {0} queens....
+        ///   Looks up a localized string similar to Searching with {0} queens....
         /// </summary>
         internal static string Searching {
             get {

@@ -126,7 +126,7 @@
     <comment>{0} should be the number of seconds taken to search and find no solutions.</comment>
   </data>
   <data name="Searching" xml:space="preserve">
-    <value>Searching for solutions to the problem with {0} queens...</value>
+    <value>Searching with {0} queens...</value>
     <comment>{0} should be the number of queens entered.</comment>
   </data>
 </root>
