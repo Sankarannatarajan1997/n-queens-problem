@@ -22,6 +22,8 @@ namespace Visual_N_Queens_Solver
         {
             if (nQueensInput.Text.Length > 0)
             {
+                solutionsList.Items.Clear();
+
                 int nQueens = Int32.Parse(nQueensInput.Text.ToString());
 
                 Solver solver = new Solver();
