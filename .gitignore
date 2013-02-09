@@ -75,6 +75,9 @@ DocProject/Help/html
 # Click-Once directory
 publish
 
+# Unnecessary files
+*.pfx
+
 # Publish Web Output
 *.Publish.xml
 
