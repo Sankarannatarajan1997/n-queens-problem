@@ -6,17 +6,18 @@ namespace Visual_N_Queens_Solver
     class Solver
     {
         private int numberOfQueens;
-        private List<string> solutions;
+        private InputForm.SolutionCallback solutionCallback;
+        private int numberOfSolutions;
 
-        public List<string> Solve(int _numberOfQueens)
+        public int Solve(int _numberOfQueens, InputForm.SolutionCallback _solutionCallback)
         {
             this.numberOfQueens = _numberOfQueens;
-            Board cleanBoard = new Board(_numberOfQueens);
-            this.solutions = new List<string>();
+            this.solutionCallback = _solutionCallback;
 
+            Board cleanBoard = new Board(_numberOfQueens);
             this.GoDeeper(cleanBoard, 1);
 
-            return this.solutions;
+            return this.numberOfSolutions;
         }
 
         private void GoDeeper(Board currentBoard, int whichQueen)
@@ -30,6 +31,7 @@ namespace Visual_N_Queens_Solver
                 {
                     Board newBoard = currentBoard.Clone();
                     newBoard.PlaceQueen(location);
+
                     this.GoDeeper(newBoard, whichQueen + 1);
                 }
             }
@@ -39,7 +41,9 @@ namespace Visual_N_Queens_Solver
                 int[] location = locationInList[0];
                 currentBoard.PlaceQueen(location);
 
-                this.solutions.Add(this.FormatSolution(currentBoard));
+                string formattedSolution = this.FormatSolution(currentBoard);
+                this.solutionCallback(formattedSolution);
+                this.numberOfSolutions++;
             }
             else
             {

@@ -22,9 +22,13 @@ namespace Visual_N_Queens_Solver
         {
             if (nQueensInput.Text.Length > 0)
             {
+                this.Cursor = Cursors.WaitCursor;
+
                 solutionsList.Items.Clear();
 
                 int nQueens = Int32.Parse(nQueensInput.Text.ToString());
+
+                SolutionCallback solutionCallback = new SolutionCallback(this.OutputText);
 
                 Solver solver = new Solver();
 
@@ -35,34 +39,19 @@ namespace Visual_N_Queens_Solver
                 Stopwatch stopwatch = new Stopwatch();
                 stopwatch.Start();
 
-                List<string> solutions = solver.Solve(nQueens);
+                int numberOfSolutions = solver.Solve(nQueens, solutionCallback);
 
                 stopwatch.Stop();
 
-                DisplaySolutions(solutions, stopwatch.Elapsed.TotalSeconds);
-            }
-        }
-
-        private void DisplaySolutions(List<string> solutions, double timeTaken)
-        {
-            if (solutions.Count > 0)
-            {
-                foreach (string solution in solutions)
-                {
-                    OutputText(solution);
-                }
-
-                string foundMessage = string.Format(Strings.FoundSolutions, solutions.Count, timeTaken);
+                string finalMessage = string.Format(Strings.FoundSolutions, numberOfSolutions, stopwatch.Elapsed.TotalSeconds);
                 this.OutputText("");
-                this.OutputText(foundMessage);
-            }
-            else
-            {
-                string fNoSolutions = string.Format(Strings.NoSolutions, timeTaken);
+                this.OutputText(finalMessage);
 
-                OutputText(fNoSolutions);
+                this.Cursor = Cursors.Default;
             }
         }
+
+        public delegate void SolutionCallback(string solution);
 
         private void OutputText(string item)
         {
