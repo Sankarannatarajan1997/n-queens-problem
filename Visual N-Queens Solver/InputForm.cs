@@ -56,6 +56,7 @@ namespace Visual_N_Queens_Solver
         private void OutputText(string item)
         {
             solutionsList.Items.Add(item);
+            solutionsList.Update();
         }
 
         private void nQueensInput_KeyPress(object sender, KeyPressEventArgs e)
